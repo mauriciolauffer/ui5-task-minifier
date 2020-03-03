@@ -35,7 +35,7 @@ npm install ui5-task-minifier --save-dev
 
 > As the devDependencies are not recognized by the UI5 tooling, they need to be listed in the `ui5 > dependencies` array. In addition, once using the `ui5 > dependencies` array you need to list all UI5 tooling relevant dependencies.
 
-2. configure it in `$yourapp/ui5.yaml`:
+2. Configure it in `$yourapp/ui5.yaml`:
 
 ```yaml
 builder:
