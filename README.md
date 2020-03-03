@@ -10,14 +10,9 @@ npm install ui5-task-minifier --save-dev
 
 ## Configuration options (in `$yourapp/ui5.yaml`)
 
-**css**: `true`|`false`
-Minify CSS fiels. By default set to `true`
-
-**html**: `true`|`false`
-Minify HTML fiels. By default set to `true`
-
-**json**: `true`|`false`
-Minify JSON fiels. By default set to `true`
+- **css**: `true`|`false` - Should minify CSS files? By default set to `true`
+- **html**: `true`|`false` - Should minify HTML files? By default set to `true`
+- **json**: `true`|`false` - Should minify JSON files? By default set to `true`
 
 ## Usage
 
