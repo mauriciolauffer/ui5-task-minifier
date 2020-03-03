@@ -1,0 +1,47 @@
+{
+  "name": "ui5-task-minifier",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Mauricio Lauffer",
+  "license": "MIT",
+  "homepage": "https://github.com/mauriciolauffer/ui5-task-minifier#readme",
+  "private": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib/**"
+  ],
+  "keywords": [
+    "ui5",
+    "task",
+    "builder",
+    "minify",
+    "minifier",
+    "uglify",
+    "css",
+    "html",
+    "json"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint lib",
+    "lint:fix": "eslint lib --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciolauffer/ui5-task-minifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauriciolauffer/ui5-task-minifier/issues"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.3",
+    "html-minifier-terser": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/clean-css": "^4.2.1",
+    "@types/html-minifier-terser": "^5.0.0",
+    "@types/node": "^13.7.6",
+    "eslint": "^6.8.0",
+    "eslint-config-mlauffer-nodejs": "git+https://github.com/mauriciolauffer/eslint-config-mlauffer-nodejs.git"
+  }
+}
