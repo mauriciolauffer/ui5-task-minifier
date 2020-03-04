@@ -43,6 +43,6 @@
     "@types/html-minifier-terser": "^5.0.0",
     "@types/node": "^13.7.6",
     "eslint": "^6.8.0",
-    "eslint-config-mlauffer-nodejs": "git+https://github.com/mauriciolauffer/eslint-config-mlauffer-nodejs.git"
+    "eslint-config-mlauffer-nodejs": "0.0.1"
   }
 }
