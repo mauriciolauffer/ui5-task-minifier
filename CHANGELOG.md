@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/mauriciolauffer/ui5-task-minifier/compare/v1.0.0...v2.0.0) (2023-06-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Fix version
+
+### Bug Fixes
+
+* Fix version ([9e58e15](https://github.com/mauriciolauffer/ui5-task-minifier/commit/9e58e15292a9372851b4b95906428dc8e212f04e))
+
 ## 1.0.0 (2023-06-05)
 
 
