@@ -1,6 +1,6 @@
 {
   "name": "ui5-task-minifier",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Task for ui5-builder which enables minifying HTML/CSS/JSON files.",
   "author": "Mauricio Lauffer",
   "license": "MIT",
