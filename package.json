@@ -27,7 +27,7 @@
     "test": "npm run lint",
     "lint": "eslint lib",
     "lint:fix": "eslint lib --fix",
-    "lint:ci": "eslint src test -f @microsoft/eslint-formatter-sarif -o target/eslint.sarif"
+    "lint:ci": "eslint lib -f @microsoft/eslint-formatter-sarif -o target/eslint.sarif"
   },
   "repository": {
     "type": "git",
