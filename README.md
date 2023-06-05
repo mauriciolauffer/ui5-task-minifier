@@ -14,34 +14,11 @@ npm install ui5-task-minifier --save-dev
 - **html**: `true`|`false` - Should minify HTML files? By default set to `true`
 - **json**: `true`|`false` - Should minify JSON files? By default set to `true`
 
-## Usage
-
-1. Define the dependency in `$yourapp/package.json`:
-
-```json
-"devDependencies": {
-    // ...
-    "ui5-task-minifier": "*"
-    // ...
-},
-"ui5": {
-  "dependencies": [
-    // ...
-    "ui5-task-minifier",
-    // ...
-  ]
-}
-```
-
-> As the devDependencies are not recognized by the UI5 tooling, they need to be listed in the `ui5 > dependencies` array. In addition, once using the `ui5 > dependencies` array you need to list all UI5 tooling relevant dependencies.
-
-2. Configure it in `$yourapp/ui5.yaml`:
-
 ```yaml
 builder:
   customTasks:
   - name: ui5-task-minifier
-    afterTask: uglify
+    afterTask: minify
     configuration:
       html: true
       css: true
@@ -49,9 +26,11 @@ builder:
 ```
 
 ## Author
+
 Mauricio Lauffer
 
- - LinkedIn: [https://www.linkedin.com/in/mauriciolauffer](https://www.linkedin.com/in/mauriciolauffer)
+- LinkedIn: [https://www.linkedin.com/in/mauriciolauffer](https://www.linkedin.com/in/mauriciolauffer)
 
 ## License
+
 [MIT](LICENSE)
