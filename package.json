@@ -26,8 +26,7 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint lib",
-    "lint:fix": "eslint lib --fix",
-    "lint:ci": "eslint lib -f @microsoft/eslint-formatter-sarif -o target/eslint.sarif"
+    "lint:ci": "eslint lib -f @microsoft/eslint-formatter-sarif -o eslint.sarif"
   },
   "repository": {
     "type": "git",
@@ -37,15 +36,14 @@
     "url": "https://github.com/mauriciolauffer/ui5-task-minifier/issues"
   },
   "dependencies": {
-    "clean-css": "^5.3.2",
+    "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0"
   },
   "devDependencies": {
-    "@microsoft/eslint-formatter-sarif": "^3.0.0",
-    "@types/clean-css": "^4.2.6",
-    "@types/html-minifier-terser": "^7.0.0",
-    "@types/node": "^20.2.5",
-    "eslint": "^8.42.0",
-    "eslint-config-mlauffer-nodejs": "^1.4.1"
+    "@types/clean-css": "^4.2.11",
+    "@types/html-minifier-terser": "^7.0.2",
+    "@types/node": "^20.10.3",
+    "eslint": "^8.55.0",
+    "eslint-config-mlauffer-nodejs": "^1.4.6"
   }
 }
