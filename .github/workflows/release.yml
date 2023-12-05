@@ -3,16 +3,17 @@ on:
   push:
     branches: [master]
 
-permissions:
-  contents: write
-  pull-requests: write
+permissions: read-all
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - uses: google-github-actions/release-please-action@v4
         with:
           token: ${{ secrets.GH_PAT }}
           release-type: node
-          package-name: ui5-task-minifier
+          package-name: openui5-validator
