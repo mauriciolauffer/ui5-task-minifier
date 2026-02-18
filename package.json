@@ -1,39 +1,40 @@
 {
   "name": "ui5-task-minifier",
   "version": "2.0.0",
-  "description": "Task for ui5-builder which enables minifying HTML/CSS/JSON files.",
-  "author": "Mauricio Lauffer",
-  "license": "MIT",
-  "homepage": "https://github.com/mauriciolauffer/ui5-task-minifier#readme",
   "private": false,
-  "main": "lib/index.js",
-  "type": "module",
-  "files": [
-    "lib/**",
-    "ui5.yaml"
-  ],
+  "description": "Task for ui5-builder which enables minifying HTML/CSS/JSON files.",
   "keywords": [
-    "ui5",
-    "task",
     "builder",
-    "minify",
-    "minifier",
-    "uglify",
     "css",
     "html",
-    "json"
+    "json",
+    "minifier",
+    "minify",
+    "task",
+    "uglify",
+    "ui5"
   ],
-  "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint --cache",
-    "lint:ci": "eslint --quiet -f @microsoft/eslint-formatter-sarif -o eslint.sarif"
+  "homepage": "https://github.com/mauriciolauffer/ui5-task-minifier#readme",
+  "bugs": {
+    "url": "https://github.com/mauriciolauffer/ui5-task-minifier/issues"
   },
+  "license": "MIT",
+  "author": "Mauricio Lauffer",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mauriciolauffer/ui5-task-minifier.git"
   },
-  "bugs": {
-    "url": "https://github.com/mauriciolauffer/ui5-task-minifier/issues"
+  "files": [
+    "lib/**",
+    "ui5.yaml"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "oxfmt --check && eslint --cache",
+    "lint:ci": "eslint --cache --quiet -f @microsoft/eslint-formatter-sarif -o eslint.sarif",
+    "format": "oxfmt --write"
   },
   "dependencies": {
     "clean-css": "^5.3.3",
@@ -42,10 +43,10 @@
   "devDependencies": {
     "@types/clean-css": "^4.2.11",
     "@types/html-minifier-terser": "^7.0.2",
-    "@types/node": "^22.14.1",
-    "eslint": "^9.25.1",
-    "eslint-config-mlauffer-nodejs": "^3.1.0",
-    "eslint-plugin-wdio": "^9.9.1",
-    "wdio-qunit-service": "^1.3.0"
+    "@types/node": "^24.10.13",
+    "eslint": "^9.39.2",
+    "eslint-config-mlauffer-nodejs": "^3.1.1",
+    "oxfmt": "^0.33.0",
+    "wdio-qunit-service": "^2.0.1"
   }
 }
