@@ -1,6 +1,6 @@
 {
   "name": "ui5-task-minifier",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": false,
   "description": "Task for ui5-builder which enables minifying HTML/CSS/JSON files.",
   "keywords": [

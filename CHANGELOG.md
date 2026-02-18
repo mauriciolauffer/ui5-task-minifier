@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/mauriciolauffer/ui5-task-minifier/compare/v2.0.0...v2.0.1) (2026-02-18)
+
+
+### Bug Fixes
+
+* linting ([#16](https://github.com/mauriciolauffer/ui5-task-minifier/issues/16)) ([432b6de](https://github.com/mauriciolauffer/ui5-task-minifier/commit/432b6defed519a37c7691a5460e797644b16a897))
+
 ## [2.0.0](https://github.com/mauriciolauffer/ui5-task-minifier/compare/v1.0.0...v2.0.0) (2023-06-05)
 
 
