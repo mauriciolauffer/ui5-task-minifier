@@ -17,12 +17,12 @@ npm install ui5-task-minifier --save-dev
 ```yaml
 builder:
   customTasks:
-  - name: ui5-task-minifier
-    afterTask: minify
-    configuration:
-      html: true
-      css: true
-      json: false
+    - name: ui5-task-minifier
+      afterTask: minify
+      configuration:
+        html: true
+        css: true
+        json: false
 ```
 
 ## Author

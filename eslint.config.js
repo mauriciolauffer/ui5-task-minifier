@@ -1,18 +1,11 @@
 import globals from "globals";
 import { defineConfig } from "eslint/config";
 import nodeConfig from "eslint-config-mlauffer-nodejs";
-import { configs as wdioConfigs } from "eslint-plugin-wdio";
 
 export default defineConfig([
   {
     name: "local-ignores",
-    ignores: [
-      "**/coverage/",
-      "**/dist/",
-      "**/gen/",
-      "**/resources/",
-      "**/thirdparty/"
-    ],
+    ignores: ["**/coverage/", "**/dist/", "**/gen/", "**/resources/", "**/thirdparty/"],
   },
   {
     files: ["lib/**/*.js", "test/**/*.js"],
@@ -20,7 +13,6 @@ export default defineConfig([
   },
   {
     files: ["test/**/*.js"],
-    extends: [wdioConfigs["flat/recommended"]],
     languageOptions: {
       globals: {
         ...globals.qunit,

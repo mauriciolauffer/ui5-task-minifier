@@ -22,12 +22,12 @@ All submissions, including submissions by project members, require review. The p
 
 1. Look through the existing issues and see if your idea is something new.
 2. Create a new issue, or comment on an existing issue that you would like to help solve:
-    * it's usually best to get some feedback before proceeding to write code.
+   - it's usually best to get some feedback before proceeding to write code.
 3. fork the repo, and clone it to your computer:
-    * GitHub has [great documentation](https://help.github.com/articles/using-pull-requests/) regarding writing your first pull request.
+   - GitHub has [great documentation](https://help.github.com/articles/using-pull-requests/) regarding writing your first pull request.
 4. make sure that you write unit-test for any code that you write for the project:
-    * ESLint is the main SAST tool in this project.
-    * look through the test suite in `/test` folder to get an idea for how to write unit-tests for this codebase.
+   - ESLint is the main SAST tool in this project.
+   - look through the test suite in `/test` folder to get an idea for how to write unit-tests for this codebase.
 
 ## Before you begin
 
@@ -35,15 +35,15 @@ All submissions, including submissions by project members, require review. The p
 
 ### How to test
 
-1. Install dependencies:
+1.  Install dependencies:
 
         npm install
 
-2. Lint the codebase:
+2.  Lint the codebase:
 
         npm run lint
 
-3. Run the tests:
+3.  Run the tests:
 
         npm test
 
@@ -51,11 +51,11 @@ All submissions, including submissions by project members, require review. The p
 
 Built code will be available in `/dist` folder.
 
-1. Install dependencies:
+1.  Install dependencies:
 
         npm install
 
-2. Build the production code:
+2.  Build the production code:
 
         npm run build
 

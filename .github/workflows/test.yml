@@ -5,7 +5,6 @@ on:
   schedule:
     - cron: "35 1 * * *"
 
-
 permissions: read-all
 
 jobs:
@@ -13,20 +12,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20, 22]
+        node-version: [20, 22, 24]
     permissions:
       security-events: write
     steps:
-    - uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: npm
-    - run: npm ci
-    - run: npm run lint:ci
-    - uses: github/codeql-action/upload-sarif@v3
-      with:
-        sarif_file: eslint.sarif
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run lint:ci
+      - uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: eslint.sarif

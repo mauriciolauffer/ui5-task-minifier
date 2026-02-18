@@ -10,10 +10,6 @@
     "emitDeclarationOnly": false,
     "skipLibCheck": true,
     "outDir": "types",
-    "types": [
-      "@types/node",
-      "@types/clean-css",
-      "@types/html-minifier-terser"
-    ]
+    "types": ["@types/node", "@types/clean-css", "@types/html-minifier-terser"]
   }
 }
